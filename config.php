@@ -1,6 +1,5 @@
 <?php
-/* Database credentials. Assuming you are running MySQL
-server with default setting (user 'root' with no password) */
+/* Database credentials. */
 define('DB_SERVER', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
@@ -15,4 +14,5 @@ if($link === false){
 } else {
     echo("<center>DEBUG: Database connected successfully</center>");
 }
+$loggedIn = isset($_SESSION['user']);
 ?>

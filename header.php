@@ -1,28 +1,38 @@
 <div id="logoTagDiv">
-	<a href="." name="&amp;lid=Logo&amp;lpos=GlobalNav"><img src="https://web.archive.org/web/20061214124217im_/http://www.youtube.com/img/pic_youtubelogo_123x63.gif" alt="Home" width="123" height="63" border="0" onmouseover="showDiv('logoHomeTip');" onmouseout="hideDiv('logoHomeTip');"/></a>
+	<a href="." name="&amp;lid=Logo&amp;lpos=GlobalNav"><img src="onsitelogo.png" alt="Home" width="123" height="63" border="0" onmouseover="showDiv('logoHomeTip');" onmouseout="hideDiv('logoHomeTip');"/></a>
 	</div>
 	<div id="logoHomeTip" style="display: none;">
 	Home
 	</div>
-
-	<div id="utilDiv">
-	
-		<b><a href="register.php">Sign Up</a></b>
-		<span class="utilDelim">|</span>
-		<a href="my_account.php">My Account</a>
-		<span class="utilDelim">|</span>
-		<a href="recently_watched.php">History</a>
-		<span class="utilDelim">|</span>
-		<!--<a href="/web/20061214124217/http://www.youtube.com/watch_queue?all" onclick="_hbLink('QuickList','UtilityLinks');">QuickList</a>
-		(<span id="quicklist_numb"><a href="/web/20061214124217/http://www.youtube.com/watch_queue?all"><script type="text/javascript">var quicklist_count=0;document.write(quicklist_count);</script></a></span>)                        
-        <span class="utilDelim">|</span>-->
-		<a href="help_center.php">Help</a>
-		<span class="utilDelim">|</span>                        
-		<a href="login.php">Log In</a>
-	<form name="logoutForm" method="post" action="logout.php">
-		<input type="hidden" name="action_logout" value="1">
-	</form>
-</div>
+<?php
+if(!isset($_SESSION['username'])) {
+    echo '		<b><a href="register.php">Sign Up</a></b>
+    <span class="utilDelim">|</span>
+    <a href="my_account.php">My Account</a>
+    <span class="utilDelim">|</span>
+    <a href="recently_watched.php">History</a>
+    <span class="utilDelim">|</span>
+    <a href="help_center.php">Help</a>
+    <span class="utilDelim">|</span>                        
+    <a href="login.php">Log In</a>
+<form name="logoutForm" method="post" action="logout.php">
+    <input type="hidden" name="action_logout" value="1">
+</form>
+</div>';
+  } else {
+    $statement = $link->prepare("SELECT * FROM users WHERE username = ? LIMIT 1");
+            $statement->bind_param("s", $_SESSION['username']);
+            $statement->execute();
+            $result = $statement->get_result();
+            if($result->num_rows === 0) exit('No rows');
+            while($row = $result->fetch_assoc()) {
+                echo '<div id="utilDiv"><strong>Hi, <a href="./profile.php?user=".$row["id"]."">'.$_SESSION["username"].'</a></strong> <span class="utilDelim">|</span> <a href="./my_account.php">My Account</a> <span class="utilDelim">|</span> <a href="./logout.php">Logout</a> <span class="utilDelim">|</span> <a href="./help_center.php">Help</a></div>
+                <div>
+                ';
+            }
+            $statement->close();
+  }
+  ?>
 
 	
 	<div id="searchDiv">

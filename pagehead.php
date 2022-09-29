@@ -1,8 +1,8 @@
 </head>
 	<title>hyperion - rebroadcast yourself</title>
 
-	<link rel="stylesheet" href="https://web.archive.org/web/20061214124217cs_/http://www.youtube.com/css/styles_yts1164775696.css" type="text/css">
-	<link rel="stylesheet" href="https://web.archive.org/web/20061214124217cs_/http://www.youtube.com/css/base_yts1166062673.css" type="text/css">
+	<link rel="stylesheet" href="//web.archive.org/web/20061214124217im_/http://youtube.com/css/styles_yts1164775696.css" type="text/css">
+	<link rel="stylesheet" href="base_yts1166062673.css" type="text/css">
 	<link rel="icon" href="/web/20061214124217im_/http://www.youtube.com/favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="/web/20061214124217im_/http://www.youtube.com/favicon.ico" type="image/x-icon">
 	
@@ -24,7 +24,7 @@
 			}
 		}
 	</script>
-	
+	<?php include("config.php");?>
 	<script language="javascript" type="text/javascript"> function _hbLink (a,b) { return false; } </script>
 
 

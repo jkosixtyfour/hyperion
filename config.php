@@ -14,5 +14,5 @@ if($link === false){
 } else {
     echo("<center>DEBUG: Database connected successfully</center>");
 }
-$loggedIn = isset($_SESSION['user']);
+$loggedIn = isset($_SESSION['username']);
 ?>

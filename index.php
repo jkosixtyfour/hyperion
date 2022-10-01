@@ -1,3 +1,14 @@
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: login.php");
+    exit;
+}
+?>
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
 
 
@@ -30,6 +41,7 @@
     <a href="https://web.archive.org/web/20061214124217/http://www.youtube.com/">Homepage 12/14/06</a>
     <a href="https://web.archive.org/web/20061215011047/http://www.youtube.com/signup">Signup 12/14/06</a>
         </div>
+
 
 		<div class="spacer">&nbsp;</div>
 	<?php include("footer.php"); ?>

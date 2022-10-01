@@ -8,8 +8,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     exit;
 }
  
-// Include config file
-require_once "config.php";
+// Include config file in pagehead
  
 // Define variables and initialize with empty values
 $new_password = $confirm_password = "";

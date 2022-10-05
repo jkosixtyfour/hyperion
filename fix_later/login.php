@@ -8,7 +8,8 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
     exit;
 }
  
-// Include config file in pagehead
+// Include config file
+require_once "config.php";
  
 // Define variables and initialize with empty values
 $username = $password = "";
@@ -91,6 +92,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 
 
+
 <html>
 <?php include ("pagehead.php"); ?>
 
@@ -105,83 +107,70 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <script type="text/javascript">
 </script>
 
-<div style="padding: 0px 5px 0px 5px;">
+<h1>Login</h1>
 
+<div id="siSignupDiv">
+	<h2>New to Hyperion?</h2>
+	
+	<p>hyperion is a way to get your videos to the people who matter to you. With hyperion you can:</p>
 
-<h1>Log In</h1>
-
-<table width="795" align="center" cellpadding="0" cellspacing="0" border="0">
-	<tbody><tr valign="top">
-		<td style="padding-right: 15px;" width="515">
+	<ul>			
+		<li>Upload, tag and share your videos worldwide</li>
+		<li>Browse thousands of original videos uploaded by community members</li>
+		<li>Find, join and create video groups to connect with people with similar interests</li>
+		<li>Customize your experience with playlists and subscriptions</li>
+		<li>Integrate hyperion with your website using video embeds or APIs</li>
+	</ul>
 		
+	<h3><a href="signup.php">Sign up now</a> and open a free account.</h3>
 		
-		<span class="highlight">What is YouTube?</span>
+	<p>To learn more about our service, please see our <a href="/web/20061213175221/http://www.youtube.com/t/help_center">Help Center</a>.</p>
+</div>
 
-		YouTube is a way to get your videos to the people who matter to you. With YouTube you can:
-		
-		<ul>
-		<li> Show off your favorite videos to the world
-		</li><li> Blog the videos you take with your digital camera or cell phone
-		</li><li> Securely and privately show videos to your friends and family around the world
-		</li><li> ... and much, much more!
-		</li></ul>
-
-		<br><span class="highlight"><a href="signup.php">Sign up now</a> and open a free account.</span>
-		<br><br><br>
-		
-		To learn more about our service, please see our <a href="help.php">Help</a> section.<br><br><br>
-		</td>
-		<td width="280">
-		
-		<table width="280" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#E5ECF9">
-			<tbody><tr>
-				<td><img src="/web/20050806235603im_/http://www.youtube.com/img/box_login_tl.gif" width="5" height="5"></td>
-				<td width="100%"><img src="/web/20050806235603im_/http://www.youtube.com/img/pixel.gif" width="1" height="5"></td>
-				<td><img src="/web/20050806235603im_/http://www.youtube.com/img/box_login_tr.gif" width="5" height="5"></td>
-			</tr>
-			<tr>
-				<td><img src="/web/20050806235603im_/http://www.youtube.com/img/pixel.gif" width="5" height="1"></td>
-				<td align="center">
-		<table width="100%" cellpadding="5" cellspacing="0" border="0">
-			<form method="post" action="login.php"></form>
-
-			<input type="hidden" name="field_command" value="login_submit">
-				<tbody><tr>
-					<td align="center" colspan="2"><div style="font-size: 14px; font-weight: bold; color:#003366; margin-bottom: 5px;">YouTube Log In</div></td>
-				</tr>
-				<tr>
-					<td align="right"><span class="label">User Name:</span></td>
-					<td><input type="text" size="20" name="field_login_username" value=""></td>
-				</tr>
-				<tr>
-					<td align="right"><span class="label">Password:</span></td>
-					<td><input type="password" size="20" name="field_login_password"></td>
-				</tr>
-				<tr>
-					<td align="right"><span class="label">&nbsp;</span></td>
-					<td><input type="submit" value="Log In"></td>
-				</tr>
-				<tr>
-					<td align="center" colspan="2"><a href="forgot.php">Forgot your password?</a><br><br></td>
-				</tr>
+<div class="contentBox" style="float: right; background-color: #EEE;">
+	<h2 class="marT0">Hyperion Members</h2>
+	<p>Login to access your account.</p>
+	
+	<table class="dataEntryTableSmall">
+		<form name="loginForm" id="loginForm" method="post">
+		<input type="hidden" name="current_form" value="loginForm"/>
 			
-			</tbody></table>
-			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+
+		<tr>
+			<td class="formLabel">	<nobr>User Name:</nobr>
+</td>
+			<td class="formFieldSmall"><input tabindex="1" type="text" size="20" name="username" value=""></td>
+		</tr>
+		<tr>
+			<td class="formLabel">	<nobr>Password:</nobr>
+</td>
+			<td class="formFieldSmall"><input tabindex="2" type="password" size="20" name="password"></td>
+		</tr>
+		<tr>
+			<td class="formLabel">&nbsp;</td>
+			<td class="formFieldSmall"><input type="submit" name="action_login" value="Log In">
+				<p class="smallText"><b>Forgot:</b>&nbsp;<a href="/web/20061213175221/http://www.youtube.com/forgot_username">Username</a> | <a href="/web/20061213175221/http://www.youtube.com/forgot">Password</a></p>
 			</td>
-				<td><img src="/web/20050806235603im_/http://www.youtube.com/img/pixel.gif" width="5" height="1"></td>
-			</tr>
-			<tr>
-				<td><img src="/web/20050806235603im_/http://www.youtube.com/img/box_login_bl.gif" width="5" height="5"></td>
-				<td><img src="/web/20050806235603im_/http://www.youtube.com/img/pixel.gif" width="1" height="5"></td>
-				<td><img src="/web/20050806235603im_/http://www.youtube.com/img/box_login_br.gif" width="5" height="5"></td>
-			</tr>
-		</tbody></table>
-			
-		</td>
-	</tr>
-</tbody></table>
+		</tr>
+		</form>
+	</table>
+</div>
 
-		</div>
+<script type="text/javascript">
+document.loginForm.username.focus();
+</script>
 
 		<div class="spacer">&nbsp;</div>
 	<?php include("footer.php"); ?>

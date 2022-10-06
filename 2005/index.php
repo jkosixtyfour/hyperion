@@ -78,9 +78,9 @@
 				<td>
 				<table style=" background-color: #BECEEE; margin: 5px 2px 1px 0px; " cellpadding="0" cellspacing="0" border="0">
 					<tr>
-						<td><img src="/web/20050831230308im_/http://www.youtube.com/img/box_login_tl.gif" width="5" height="5"></td>
+						<td><img src="img/box_login_tl.gif" width="5" height="5"></td>
 						<td><img src="img/pixel.gif" width="1" height="5"></td>
-						<td><img src="/web/20050831230308im_/http://www.youtube.com/img/box_login_tr.gif" width="5" height="5"></td>
+						<td><img src="img/box_login_tr.gif" width="5" height="5"></td>
 					</tr>
 					<tr>
 						<td><img src="img/pixel.gif" width="5" height="1"></td>
@@ -92,9 +92,9 @@
 				<td>
 				<table style=" background-color: #BECEEE; margin: 5px 2px 1px 0px; " cellpadding="0" cellspacing="0" border="0">
 					<tr>
-						<td><img src="/web/20050831230308im_/http://www.youtube.com/img/box_login_tl.gif" width="5" height="5"></td>
+						<td><img src="img/box_login_tl.gif" width="5" height="5"></td>
 						<td><img src="img/pixel.gif" width="1" height="5"></td>
-						<td><img src="/web/20050831230308im_/http://www.youtube.com/img/box_login_tr.gif" width="5" height="5"></td>
+						<td><img src="img/box_login_tr.gif" width="5" height="5"></td>
 					</tr>
 					<tr>
 						<td><img src="img/pixel.gif" width="5" height="1"></td>
@@ -106,9 +106,9 @@
 				<td>
 				<table style=" background-color: #BECEEE; margin: 5px 2px 1px 0px; " cellpadding="0" cellspacing="0" border="0">
 					<tr>
-						<td><img src="/web/20050831230308im_/http://www.youtube.com/img/box_login_tl.gif" width="5" height="5"></td>
+						<td><img src="img/box_login_tl.gif" width="5" height="5"></td>
 						<td><img src="img/pixel.gif" width="1" height="5"></td>
-						<td><img src="/web/20050831230308im_/http://www.youtube.com/img/box_login_tr.gif" width="5" height="5"></td>
+						<td><img src="img/box_login_tr.gif" width="5" height="5"></td>
 					</tr>
 					<tr>
 						<td><img src="img/pixel.gif" width="5" height="1"></td>
@@ -126,9 +126,9 @@
 
 <table align="center" width="800" bgcolor="#DDDDDD" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 10px;">
 	<tr>
-		<td><img src="/web/20050831230308im_/http://www.youtube.com/img/box_login_tl.gif" width="5" height="5"></td>
+		<td><img src="img/box_login_tl.gif" width="5" height="5"></td>
 		<td><img src="img/pixel.gif" width="1" height="5"></td>
-		<td><img src="/web/20050831230308im_/http://www.youtube.com/img/box_login_tr.gif" width="5" height="5"></td>
+		<td><img src="img/box_login_tr.gif" width="5" height="5"></td>
 	</tr>
 	<tr>
 		<td><img src="img/pixel.gif" width="5" height="1"></td>
@@ -162,9 +162,9 @@
 		<td><img src="img/pixel.gif" width="5" height="1"></td>
 	</tr>
 	<tr>
-		<td style="border-bottom: 1px solid #FFFFFF"><img src="/web/20050831230308im_/http://www.youtube.com/img/box_login_bl.gif" width="5" height="5"></td>
+		<td style="border-bottom: 1px solid #FFFFFF"><img src="img/box_login_bl.gif" width="5" height="5"></td>
 		<td style="border-bottom: 1px solid #BBBBBB"><img src="img/pixel.gif" width="1" height="5"></td>
-		<td style="border-bottom: 1px solid #FFFFFF"><img src="/web/20050831230308im_/http://www.youtube.com/img/box_login_br.gif" width="5" height="5"></td>
+		<td style="border-bottom: 1px solid #FFFFFF"><img src="img/box_login_br.gif" width="5" height="5"></td>
 	</tr>
 </table>
 
@@ -296,9 +296,9 @@
 				<td><img src="img/pixel.gif" width="5" height="1"></td>
 			</tr>
 			<tr>
-				<td><img src="/web/20050831230308im_/http://www.youtube.com/img/box_login_bl.gif" width="5" height="5"></td>
+				<td><img src="img/box_login_bl.gif" width="5" height="5"></td>
 				<td><img src="img/pixel.gif" width="1" height="5"></td>
-				<td><img src="/web/20050831230308im_/http://www.youtube.com/img/box_login_br.gif" width="5" height="5"></td>
+				<td><img src="img/box_login_br.gif" width="5" height="5"></td>
 			</tr>
 		</table>
 		</div>
@@ -307,9 +307,9 @@
 		<!-- begin recently featured -->
 		<table width="595" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#CCCCCC">
 			<tr>
-				<td><img src="/web/20050831230308im_/http://www.youtube.com/img/box_login_tl.gif" width="5" height="5"></td>
+				<td><img src="img/box_login_tl.gif" width="5" height="5"></td>
 				<td width="100%"><img src="img/pixel.gif" width="1" height="5"></td>
-				<td><img src="/web/20050831230308im_/http://www.youtube.com/img/box_login_tr.gif" width="5" height="5"></td>
+				<td><img src="img/box_login_tr.gif" width="5" height="5"></td>
 			</tr>
 			<tr>
 				<td><img src="img/pixel.gif" width="5" height="1"></td>
@@ -615,9 +615,9 @@
 				<td><img src="img/pixel.gif" width="5" height="1"></td>
 			</tr>
 			<tr>
-				<td><img src="/web/20050831230308im_/http://www.youtube.com/img/box_login_bl.gif" width="5" height="5"></td>
+				<td><img src="img/box_login_bl.gif" width="5" height="5"></td>
 				<td><img src="img/pixel.gif" width="1" height="5"></td>
-				<td><img src="/web/20050831230308im_/http://www.youtube.com/img/box_login_br.gif" width="5" height="5"></td>
+				<td><img src="img/box_login_br.gif" width="5" height="5"></td>
 			</tr>
 		</table>
 		<!-- end recently featured -->
@@ -628,9 +628,9 @@
 		
 		<table width="180" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFEEBB">
 			<tr>
-				<td><img src="/web/20050831230308im_/http://www.youtube.com/img/box_login_tl.gif" width="5" height="5"></td>
+				<td><img src="img/box_login_tl.gif" width="5" height="5"></td>
 				<td><img src="img/pixel.gif" width="1" height="5"></td>
-				<td><img src="/web/20050831230308im_/http://www.youtube.com/img/box_login_tr.gif" width="5" height="5"></td>
+				<td><img src="img/box_login_tr.gif" width="5" height="5"></td>
 			</tr>
 			<tr>
 				<td><img src="img/pixel.gif" width="5" height="1"></td>
@@ -644,18 +644,18 @@
 				<td><img src="img/pixel.gif" width="5" height="1"></td>
 			</tr>
 			<tr>
-				<td><img src="/web/20050831230308im_/http://www.youtube.com/img/box_login_bl.gif" width="5" height="5"></td>
+				<td><img src="img/box_login_bl.gif" width="5" height="5"></td>
 				<td><img src="img/pixel.gif" width="1" height="5"></td>
-				<td><img src="/web/20050831230308im_/http://www.youtube.com/img/box_login_br.gif" width="5" height="5"></td>
+				<td><img src="img/box_login_br.gif" width="5" height="5"></td>
 			</tr>
 		</table>
 		
 		<div style="margin-top: 10px;">
 		<table width="180" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFCC99">
 			<tr>
-				<td><img src="/web/20050831230308im_/http://www.youtube.com/img/box_login_tl.gif" width="5" height="5"></td>
+				<td><img src="img/box_login_tl.gif" width="5" height="5"></td>
 				<td><img src="img/pixel.gif" width="1" height="5"></td>
-				<td><img src="/web/20050831230308im_/http://www.youtube.com/img/box_login_tr.gif" width="5" height="5"></td>
+				<td><img src="img/box_login_tr.gif" width="5" height="5"></td>
 			</tr>
 			<tr>
 				<td><img src="img/pixel.gif" width="5" height="1"></td>
@@ -675,9 +675,9 @@
 				<td><img src="img/pixel.gif" width="5" height="1"></td>
 			</tr>
 			<tr>
-				<td><img src="/web/20050831230308im_/http://www.youtube.com/img/box_login_bl.gif" width="5" height="5"></td>
+				<td><img src="img/box_login_bl.gif" width="5" height="5"></td>
 				<td><img src="img/pixel.gif" width="1" height="5"></td>
-				<td><img src="/web/20050831230308im_/http://www.youtube.com/img/box_login_br.gif" width="5" height="5"></td>
+				<td><img src="img/box_login_br.gif" width="5" height="5"></td>
 			</tr>
 		</table>
 		</div>
@@ -843,9 +843,9 @@
 		<div style="padding-top: 15px;">
 		<table width="180" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#EEEEDD">
 			<tr>
-				<td><img src="/web/20050831230308im_/http://www.youtube.com/img/box_login_tl.gif" width="5" height="5"></td>
+				<td><img src="img/box_login_tl.gif" width="5" height="5"></td>
 				<td><img src="img/pixel.gif" width="1" height="5"></td>
-				<td><img src="/web/20050831230308im_/http://www.youtube.com/img/box_login_tr.gif" width="5" height="5"></td>
+				<td><img src="img/box_login_tr.gif" width="5" height="5"></td>
 			</tr>
 			<tr>
 				<td><img src="img/pixel.gif" width="5" height="1"></td>
@@ -922,9 +922,9 @@
 				<td><img src="img/pixel.gif" width="5" height="1"></td>
 			</tr>
 			<tr>
-				<td><img src="/web/20050831230308im_/http://www.youtube.com/img/box_login_bl.gif" width="5" height="5"></td>
+				<td><img src="img/box_login_bl.gif" width="5" height="5"></td>
 				<td><img src="img/pixel.gif" width="1" height="5"></td>
-				<td><img src="/web/20050831230308im_/http://www.youtube.com/img/box_login_br.gif" width="5" height="5"></td>
+				<td><img src="img/box_login_br.gif" width="5" height="5"></td>
 			</tr>
 		</table>
 		</div>

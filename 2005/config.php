@@ -12,7 +12,9 @@ $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
 if($link === false){
     die("<center>ERROR: Could not connect. " . mysqli_connect_error() . "</center>");
 } else {
+    session_start();
   //  echo("<center>DEBUG: Database connected successfully</center>");
 }
 $loggedIn = isset($_SESSION['username']);
+
 ?>

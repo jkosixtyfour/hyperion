@@ -12,11 +12,29 @@
 					<tr>
 		
 							
-						<td><a href="signup.php"><strong>Sign Up</strong></a></td>
-						<td style="padding: 0px 5px 0px 5px;">|</td>
-						<td><a href="login.php">Log In</a></td>
-						<td style="padding: 0px 5px 0px 5px;">|</td>
-						<td style="padding-right: 5px;"><a href="help.php">Help</a></td>
+                    <?php
+if(!isset($_SESSION['username'])) {
+    echo '<td><a href="signup.php"><strong>Sign Up</strong></a></td>
+    <td style="padding: 0px 5px 0px 5px;">|</td>
+    <td><a href="login.php">Log In</a></td>
+    <td style="padding: 0px 5px 0px 5px;">|</td>
+    <td style="padding-right: 5px;"><a href="help.php">Help</a></td>';
+  } else {
+    $statement = $link->prepare("SELECT * FROM users WHERE username = ? LIMIT 1");
+            $statement->bind_param("s", $_SESSION['username']);
+            $statement->execute();
+            $result = $statement->get_result();
+            if($result->num_rows === 0) exit('No rows');
+            while($row = $result->fetch_assoc()) {
+                echo '<td>Hello, <a href="./profile.php?user='.$_SESSION["username"].'">'.$_SESSION["username"].'</a>! <img src="img/mail.gif" border="0"> (<a href="#">0</a>)</td>
+                <td style="padding: 0px 5px 0px 5px;">|</td>
+                <td><a href="logout.php">Log Out</a></td>
+                <td style="padding: 0px 5px 0px 5px;">|</td>
+                <td style="padding-right: 5px;"><a href="help.php">Help</a></td>';
+            }
+            $statement->close();
+  }
+  ?>						
 		
 										
 					</tr>
@@ -33,7 +51,7 @@
 		<table cellpadding="0" cellspacing="0" border="0">
 			<tr>
 				<td>
-				<table style=" background-color: #DDDDDD; margin: 5px 2px 0px 5px; border-bottom: 1px solid #DDDDDD; " cellpadding="0" cellspacing="0" border="0">
+				<table style=" background-color: #BECEEE; margin: 5px 2px 1px 0px; " cellpadding="0" cellspacing="0" border="0">
 					<tr>
 						<td><img src="img/box_login_tl.gif" width="5" height="5"></td>
 						<td><img src="img/pixel.gif" width="1" height="5"></td>

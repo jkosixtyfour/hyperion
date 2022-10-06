@@ -25,7 +25,7 @@ if(!isset($_SESSION['username'])) {
             $result = $statement->get_result();
             if($result->num_rows === 0) exit('No rows');
             while($row = $result->fetch_assoc()) {
-                echo '<td>Hello, <a href="./profile.php?user=".$row["id"]."">'.$_SESSION["username"].'</a>! <img src="img/mail.gif" border="0"> (<a href="#">0</a>)</td>
+                echo '<td>Hello, <a href="./profile.php?user='.$_SESSION["username"].'">'.$_SESSION["username"].'</a>! <img src="img/mail.gif" border="0"> (<a href="#">0</a>)</td>
                 <td style="padding: 0px 5px 0px 5px;">|</td>
                 <td><a href="logout.php">Log Out</a></td>
                 <td style="padding: 0px 5px 0px 5px;">|</td>

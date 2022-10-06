@@ -9,8 +9,8 @@
 	
 	<title>hyperion - Rebroadcast Yourself.</title>
 
-	<link rel="stylesheet" href="https://web.archive.org/web/20070831182909cs_/http://youtube.com/css/styles_yts1187851135.css" type="text/css">
-	<link rel="stylesheet" href="https://web.archive.org/web/20070831182909cs_/http://youtube.com/css/base_yts1188285490.css" type="text/css">
+	<link rel="stylesheet" href="//web.archive.org/web/20070831182909cs_/http://youtube.com/css/styles_yts1187851135.css" type="text/css">
+	<link rel="stylesheet" href="//web.archive.org/web/20070831182909cs_/http://youtube.com/css/base_yts1188285490.css" type="text/css">
 	<link rel="search" type="application/opensearchdescription+xml" href="#" title="YouTube Video Search">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -315,7 +315,7 @@ function hide_active_sharing()  {
 </div>
 <!-- end gNavDiv -->
 
-<div id="gNavBottom"><div id="searchDiv">	<form name="searchForm" id="searchForm" method="get" action="/web/20070831182909/http://youtube.com/results">
+<div id="gNavBottom"><div id="searchDiv">	<form name="searchForm" id="searchForm" method="get" action="results.php">
 		<input tabindex="10000" type="text" name="search_query" maxlength="128" class="searchField" value="">
 		&nbsp;
 			<input type="submit" name="search" value="Search">
@@ -345,43 +345,43 @@ function hide_active_sharing()  {
 			<div class="hpSVidEntry marB0">
 				<div class="videoIconWrapperOuter">
 					<div class="videoIconWrapperInner">
-					<div class="vstill"><a href="/web/20070831182909/http://youtube.com/cthru?YKY-f1j3yiXrIXjQGwEwrVfcGG5ERUo5YvK0uIcS0hX0y5T2w5pVjCd8J5casPIkCgnEPyK5s_z4q3eU-IGcTZuPge2gn0egmtZylnaeMSkoxTzvASZGCNzad5MF1F5E6zgtI1OhNADBQ-JUsPtzEnLv40bJ-BgTTyaVMC7PJLWEZJJs3Q9ayJ8v5InBJiXiZF_L4nmJ1zfb18y5rmAomA==" name="&amp;lid=DV+-+BeyoncéIrreplaceable+-+beyonce&amp;lpos=hp-s0"><img src="http://web.archive.org/web/20070831182909im_/http://img.youtube.com/vi/dsQvXgCcng8/default.jpg" class="vimg120"></a></div>
+					<div class="vstill"><a href="#" name="testing mf"><img src="assets/default.jpg" class="vimg120"></a></div>
 					</div>
 					</div>
 
 				<div class="vtitle smallText">
-					<a href="/web/20070831182909/http://youtube.com/cthru?YKY-f1j3yiXrIXjQGwEwrVfcGG5ERUo5YvK0uIcS0hX0y5T2w5pVjCd8J5casPIkCgnEPyK5s_z4q3eU-IGcTZuPge2gn0egmtZylnaeMSkoxTzvASZGCNzad5MF1F5E6zgtI1OhNADBQ-JUsPtzEnLv40bJ-BgTTyaVMC7PJLWEZJJs3Q9ayJ8v5InBJiXiZF_L4nmJ1zfb18y5rmAomA==" name="&amp;lid=DV+-+BeyoncéIrreplaceable+-+beyonce&amp;lpos=hp-s0">Beyoncé-Irreplac eable</a>
+					<a href="#" name="testing mf">testing mf</a>
 				</div>
 				<div class="vfacets" style="margin-bottom: 0px;">
-				<a href="/web/20070831182909/http://youtube.com/user/beyonce" class="dg">beyonce</a>
+				<a href="#" class="dg">redst0ne</a>
 				</div>
 			</div>
 			<div class="hpSVidEntry marB0">
 				<div class="videoIconWrapperOuter">
 					<div class="videoIconWrapperInner">
-					<div class="vstill"><a href="/web/20070831182909/http://youtube.com/cthru?pAjz-reQ26i4I23WnYBLEHCXP8LprxFTqMsBSw0fzPHd8H5NExdaTCGIdGiDgCwW1mJx5Y6U4gOoLx2xKqb0XOT01306eDcx1m4f3koRXYxEqedQ8mJ6rqK7eT0jJ_0vFJp9lWANuGntIPKJIYakNlJVKEEOSY0YBKGMWOA7SNaYAGqfms-XPT_g6smQnng-BfUaffJLitbnmSh-XIZqew==" name="&amp;lid=DV+-+GameTrailersCountdownTopTenFranchises+-+gametrailers&amp;lpos=hp-s1"><img src="http://web.archive.org/web/20070831182909im_/http://img.youtube.com/vi/dSeYlDeUXOY/default.jpg" class="vimg120"></a></div>
+					<div class="vstill"><a href="#" name="testing mf"><img src="assets/default.jpg" class="vimg120"></a></div>
 					</div>
 					</div>
 
 				<div class="vtitle smallText">
-					<a href="/web/20070831182909/http://youtube.com/cthru?pAjz-reQ26i4I23WnYBLEHCXP8LprxFTqMsBSw0fzPHd8H5NExdaTCGIdGiDgCwW1mJx5Y6U4gOoLx2xKqb0XOT01306eDcx1m4f3koRXYxEqedQ8mJ6rqK7eT0jJ_0vFJp9lWANuGntIPKJIYakNlJVKEEOSY0YBKGMWOA7SNaYAGqfms-XPT_g6smQnng-BfUaffJLitbnmSh-XIZqew==" name="&amp;lid=DV+-+GameTrailersCountdownTopTenFranchises+-+gametrailers&amp;lpos=hp-s1">GameTrailers Countd...</a>
+					<a href="#" name="testing mf">testing mf</a>
 				</div>
 				<div class="vfacets" style="margin-bottom: 0px;">
-				<a href="/web/20070831182909/http://youtube.com/user/gametrailers" class="dg">gametrailers</a>
+				<a href="#" class="dg">redst0ne</a>
 				</div>
 			</div>
 			<div class="hpSVidEntry marB0">
 				<div class="videoIconWrapperOuter">
 					<div class="videoIconWrapperInner">
-					<div class="vstill"><a href="/web/20070831182909/http://youtube.com/cthru?oU_M7hbL7Ielpoqp10tGcO3JWHPqUuBFDqJKYbOGo_jCsG0Z8wYllwJLHKTCpG0lfkRaP8Lf4tMvzxK371aYoG4cdrx-6gHKeLltZBfDLEYiCp86QDvrxUeASnIzhXuFSCpd1YUBDfH3oijIA6LrKcd4NA0ry5fq5iDquZHInt1_Q7ea8Y2QBUpdRYrcxcWo0jrWBmhXz5mLl3D8ysKV6Q==" name="&amp;lid=DV+-+NicoleScherzingerWhateverULikeCleanWithLogosClosedCaptioned+-+universalmusicgroup&amp;lpos=hp-s2"><img src="http://web.archive.org/web/20070831182909im_/http://img.youtube.com/vi/UJPbvzFPZVY/default.jpg" class="vimg120"></a></div>
+					<div class="vstill"><a href="#" name="testing mf"><img src="assets/default.jpg" class="vimg120"></a></div>
 					</div>
 					</div>
 
 				<div class="vtitle smallText">
-					<a href="/web/20070831182909/http://youtube.com/cthru?oU_M7hbL7Ielpoqp10tGcO3JWHPqUuBFDqJKYbOGo_jCsG0Z8wYllwJLHKTCpG0lfkRaP8Lf4tMvzxK371aYoG4cdrx-6gHKeLltZBfDLEYiCp86QDvrxUeASnIzhXuFSCpd1YUBDfH3oijIA6LrKcd4NA0ry5fq5iDquZHInt1_Q7ea8Y2QBUpdRYrcxcWo0jrWBmhXz5mLl3D8ysKV6Q==" name="&amp;lid=DV+-+NicoleScherzingerWhateverULikeCleanWithLogosClosedCaptioned+-+universalmusicgroup&amp;lpos=hp-s2">Nicole Scherzinger ...</a>
+					<a href="#" name="testingmf">testing mf</a>
 				</div>
 				<div class="vfacets" style="margin-bottom: 0px;">
-				<a href="/web/20070831182909/http://youtube.com/user/universalmusicgroup" class="dg">universalmusicgroup</a>
+				<a href="#" class="dg">redst0ne</a>
 				</div>
 			</div>
 			<div class="hpSVidEntry marB0">

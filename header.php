@@ -6,7 +6,7 @@
 	</div>
 <?php
 if(!isset($_SESSION['username'])) {
-    echo '		<b><a href="register.php">Sign Up</a></b>
+    echo '<b><a href="register.php">Sign Up</a></b>
     <span class="utilDelim">|</span>
     <a href="my_account.php">My Account</a>
     <span class="utilDelim">|</span>
@@ -26,7 +26,7 @@ if(!isset($_SESSION['username'])) {
             $result = $statement->get_result();
             if($result->num_rows === 0) exit('No rows');
             while($row = $result->fetch_assoc()) {
-                echo '<div id="utilDiv"><strong>Hi, <a href="./profile.php?user=".$row["id"]."">'.$_SESSION["username"].'</a></strong> <span class="utilDelim">|</span> <a href="./my_account.php">My Account</a> <span class="utilDelim">|</span> <a href="./logout.php">Logout</a> <span class="utilDelim">|</span> <a href="./help_center.php">Help</a></div>
+                echo '<div id="utilDiv">Hi, <a href="./profile.php?user=".$row["id"]."">'.$_SESSION["username"].'</a></strong> <span class="utilDelim">|</span> <a href="./my_account.php">My Account</a> <span class="utilDelim">|</span> <a href="./logout.php">Logout</a> <span class="utilDelim">|</span> <a href="./help_center.php">Help</a></div>
                 <div>
                 ';
             }

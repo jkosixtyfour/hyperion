@@ -1,24 +1,10 @@
+<?php
+// Initialize the session
+session_start();
+?>
 
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>hyperion - Rebroadcast Yourself.</title>
-		
-		<script language="javascript" type="text/javascript">
-		onLoadFunctionList = new Array();
-		function performOnLoadFunctions()
-		{
-			for (var i in onLoadFunctionList)
-			{
-				onLoadFunctionList[i]();
-			}
-		}
-		</script>
-<link rel="icon" href="/web/20050831230308im_/http://www.youtube.com/favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="/web/20050831230308im_/http://www.youtube.com/favicon.ico" type="image/x-icon">
-<link href="styles.css" rel="stylesheet" type="text/css">
-<link rel="alternate" type="application/rss+xml" title="YouTube " " recently added videos [rss]" href="http://web.archive.org/web/20050831230308/http://www.youtube.com/rss/global/recently_added.rss">
-</head>
+<?php include("htmlhead.php"); ?>
 
 
 <body onload="performOnLoadFunctions();">
@@ -27,163 +13,7 @@
 		<td bgcolor="#FFFFFF" style="padding-bottom: 25px;">
 		
 
-<table width="100%" cellpadding="0" cellspacing="0" border="0">
-	<tr valign="top">
-		<td width="130" rowspan="2" style="padding: 0px 5px 5px 5px;"><a href="index.php"><img src="img/logo.png" width="120" height="48" alt="YouTube" border="0" style="vertical-align: middle; "></a></td>
-		<td valign="top">
-		
-		<table width="670" cellpadding="0" cellspacing="0" border="0">
-			<tr valign="top">
-				<td style="padding: 0px 5px 0px 5px; font-style: italic;">Upload, tag and share your videos worldwide!</td>
-				<td align="right">
-				
-				<table cellpadding="0" cellspacing="0" border="0">
-					<tr>
-		
-							
-						<td><a href="signup.php"><strong>Sign Up</strong></a></td>
-						<td style="padding: 0px 5px 0px 5px;">|</td>
-						<td><a href="login.php">Log In</a></td>
-						<td style="padding: 0px 5px 0px 5px;">|</td>
-						<td style="padding-right: 5px;"><a href="help.php">Help</a></td>
-		
-										
-					</tr>
-				</table>
-				
-				</td>
-			</tr>
-		</table>
-		</td>
-	</tr>
-	<tr valign="bottom">
-		<td>
-		
-		<table cellpadding="0" cellspacing="0" border="0">
-			<tr>
-				<td>
-				<table style=" background-color: #DDDDDD; margin: 5px 2px 0px 5px; border-bottom: 1px solid #DDDDDD; " cellpadding="0" cellspacing="0" border="0">
-					<tr>
-						<td><img src="img/box_login_tl.gif" width="5" height="5"></td>
-						<td><img src="img/pixel.gif" width="1" height="5"></td>
-						<td><img src="img/box_login_tr.gif" width="5" height="5"></td>
-					</tr>
-					<tr>
-						<td><img src="img/pixel.gif" width="5" height="1"></td>
-						<td style="padding: 0px 20px 5px 20px; font-size: 13px; font-weight: bold;"><a href="index.php">Home</a></td>
-						<td><img src="img/pixel.gif" width="5" height="1"></td>
-					</tr>
-				</table>
-				</td>
-				<td>
-				<table style=" background-color: #BECEEE; margin: 5px 2px 1px 0px; " cellpadding="0" cellspacing="0" border="0">
-					<tr>
-						<td><img src="img/box_login_tl.gif" width="5" height="5"></td>
-						<td><img src="img/pixel.gif" width="1" height="5"></td>
-						<td><img src="img/box_login_tr.gif" width="5" height="5"></td>
-					</tr>
-					<tr>
-						<td><img src="img/pixel.gif" width="5" height="1"></td>
-						<td style="padding: 0px 20px 5px 20px; font-size: 13px; font-weight: bold;"><a href="browse.php">Watch&nbsp;Videos</a></td>
-						<td><img src="img/pixel.gif" width="5" height="1"></td>
-					</tr>
-				</table>
-				</td>
-				<td>
-				<table style=" background-color: #BECEEE; margin: 5px 2px 1px 0px; " cellpadding="0" cellspacing="0" border="0">
-					<tr>
-						<td><img src="img/box_login_tl.gif" width="5" height="5"></td>
-						<td><img src="img/pixel.gif" width="1" height="5"></td>
-						<td><img src="img/box_login_tr.gif" width="5" height="5"></td>
-					</tr>
-					<tr>
-						<td><img src="img/pixel.gif" width="5" height="1"></td>
-						<td style="padding: 0px 20px 5px 20px; font-size: 13px; font-weight: bold;"><a href="my_videos_upload.php">Upload&nbsp;Videos</a></td>
-						<td><img src="img/pixel.gif" width="5" height="1"></td>
-					</tr>
-				</table>
-				</td>
-				<td>
-				<table style=" background-color: #BECEEE; margin: 5px 2px 1px 0px; " cellpadding="0" cellspacing="0" border="0">
-					<tr>
-						<td><img src="img/box_login_tl.gif" width="5" height="5"></td>
-						<td><img src="img/pixel.gif" width="1" height="5"></td>
-						<td><img src="img/box_login_tr.gif" width="5" height="5"></td>
-					</tr>
-					<tr>
-						<td><img src="img/pixel.gif" width="5" height="1"></td>
-						<td style="padding: 0px 20px 5px 20px; font-size: 13px; font-weight: bold;"><a href="my_friends_invite.php">Invite&nbsp;Friends</a></td>
-						<td><img src="img/pixel.gif" width="5" height="1"></td>
-					</tr>
-				</table>
-				</td>
-			</tr>
-		</table>
-		</td>
-	</tr>
-	
-</table>
-
-<table align="center" width="800" bgcolor="#DDDDDD" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 10px;">
-	<tr>
-		<td><img src="img/box_login_tl.gif" width="5" height="5"></td>
-		<td><img src="img/pixel.gif" width="1" height="5"></td>
-		<td><img src="img/box_login_tr.gif" width="5" height="5"></td>
-	</tr>
-	<tr>
-		<td><img src="img/pixel.gif" width="5" height="1"></td>
-		<td width="790" align="center" style="padding: 2px;">
-
-		<table cellpadding="0" cellspacing="0" border="0">
-			<tr>
-				<td style="font-size: 10px;">&nbsp;</td>
-				
-								
-				<td style="  "><a href="my_videos.php">My Videos</a></td>
-				<td style="padding: 0px 10px 0px 10px;">|</td>
-				<td style="  "><a href="my_favorites.php">My Favorites</a></td>
-				<td style="padding: 0px 10px 0px 10px;">|</td>
-				<td style="  "><a href="my_friends.php">My Friends</a></td>
-				<!-- <td>&nbsp;|&nbsp;</td>
-				<td style="  "><a href="my_groups.php">My Groups</a></td> -->
-				<td style="padding: 0px 10px 0px 10px;">|</td>
-				<td style="  "><a href="my_messages.php">My Messages</a></td>
-				<td style="padding: 0px 10px 0px 10px;">|</td>
-				<td style="  "><a href="my_profile.php">My Profile</a></td>
-				
-								
-								
-								
-				<td style="font-size: 10px;">&nbsp;</td>
-			</tr>
-		</table>
-			
-		</td>
-		<td><img src="img/pixel.gif" width="5" height="1"></td>
-	</tr>
-	<tr>
-		<td style="border-bottom: 1px solid #FFFFFF"><img src="img/box_login_bl.gif" width="5" height="5"></td>
-		<td style="border-bottom: 1px solid #BBBBBB"><img src="img/pixel.gif" width="1" height="5"></td>
-		<td style="border-bottom: 1px solid #FFFFFF"><img src="img/box_login_br.gif" width="5" height="5"></td>
-	</tr>
-</table>
-
-<div style="padding: 0px 5px 0px 5px;">
-
-
-
-
-<table align="center" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 10px;">
-	<tr>
-		<form name="searchForm" id="searchForm" method="GET" action="results.php">
-	 		<td style="padding-right: 5px;"><input tabindex="1" type="text" value="" name="search" maxlength="128" style="color:#ff3333; font-size: 12px; width: 300px;"></td>
-			<td><input type="submit" value="Search Videos"></td>
-		</form>
-		<script language="javascript">
-			onLoadFunctionList.push(function () { document.searchForm.search.focus(); });
-		</script>
-	</tr>
-</table>
+<?php include("header.php"); ?>
 
 <div class="errorBox">
 		This site is in development. Please report any bugs to our <a href="https://discord.gg/ggcw72kYwV">Discord server</a>.
@@ -193,116 +23,9 @@
 	<tr valign="top">
 		<td style="padding-right: 15px;">
 		
-		<table width="595" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#E5ECF9">
-			<tr>
-				<td><img src="img/box_login_tl.gif" width="5" height="5"></td>
-				<td width="100%"><img src="img/pixel.gif" width="1" height="5"></td>
-				<td><img src="img/box_login_tr.gif" width="5" height="5"></td>
-			</tr>
-			<tr>
-				<td><img src="img/pixel.gif" width="5" height="1"></td>
-				<td style="padding: 5px 0px 5px 0px;">
-				
-								
-				<table width="100%" cellpadding="0" cellspacing="0" border="0">
-					<tr valign="top">
-					<td width="33%" style="border-right: 1px dashed #369; padding: 0px 10px 10px 10px; color: #444;">
-					<div style="font-size: 16px; font-weight: bold; margin-bottom: 5px;"><a href="browse.php">Watch</a></div>
-					Instantly find and watch 1000's of fast streaming videos.
-					</td>
-					<td width="33%" style="border-right: 1px dashed #369; padding: 0px 10px 10px 10px; color: #444;">
-					<div style="font-size: 16px; font-weight: bold; margin-bottom: 5px;"><a href="my_videos_upload.php">Upload</a></div>
-					Quickly upload and tag videos in almost any video format.
-					</td>
-					<td width="33%" style="padding: 0px 10px 10px 10px; color: #444;">
-					<div style="font-size: 16px; font-weight: bold; margin-bottom: 5px;"><a href="my_friends_invite.php">Share</a></div>
-					Easily share your videos with family, friends, or co-workers.
-					</td>
-					</tr>
-				</table>
+<?php include("features.php"); ?>
 
-									
-				</td>
-				<td><img src="img/pixel.gif" width="5" height="1"></td>
-			</tr>
-			<tr>
-				<td><img src="img/box_login_bl.gif" width="5" height="5"></td>
-				<td><img src="img/pixel.gif" width="1" height="5"></td>
-				<td><img src="img/box_login_br.gif" width="5" height="5"></td>
-			</tr>
-		</table>
-
-		<!-- begin recently viewed -->
-		<div style="padding: 10px 0px 10px 0px;">
-		<table width="595" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#EEEEDD">
-			<tr>
-				<td><img src="img/box_login_tl.gif" width="5" height="5"></td>
-				<td><img src="img/pixel.gif" width="1" height="5"></td>
-				<td><img src="img/box_login_tr.gif" width="5" height="5"></td>
-			</tr>
-			<tr>
-				<td><img src="img/pixel.gif" width="5" height="1"></td>
-				<td width="585">
-				<div style="padding: 2px 5px 8px 5px;">
-				<div style="font-size: 14px; font-weight: bold; color: #666633;">Recently Viewed...</div>
-				
-				<table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
-				<tr>
-							
-						<td width="20%" align="center">
-		
-						<a href="index.php?v=MjnFzJmfemc"><img src="/web/20050831230308im_/http://www.youtube.com/get_still.php?video_id=MjnFzJmfemc" width="80" height="60" style="border: 5px solid #FFFFFF; margin-top: 10px;"></a>
-						<div class="moduleFeaturedDetails" style="padding-top: 2px;">1 second ago</div>
-		
-						</td>
-		
-								
-						<td width="20%" align="center">
-		
-						<a href="index.php?v=L-mEkdCICpQ"><img src="/web/20050831230308im_/http://www.youtube.com/get_still.php?video_id=L-mEkdCICpQ" width="80" height="60" style="border: 5px solid #FFFFFF; margin-top: 10px;"></a>
-						<div class="moduleFeaturedDetails" style="padding-top: 2px;">2 seconds ago</div>
-		
-						</td>
-		
-								
-						<td width="20%" align="center">
-		
-						<a href="index.php?v=sGGVY44Ry0o"><img src="/web/20050831230308im_/http://www.youtube.com/get_still.php?video_id=sGGVY44Ry0o" width="80" height="60" style="border: 5px solid #FFFFFF; margin-top: 10px;"></a>
-						<div class="moduleFeaturedDetails" style="padding-top: 2px;">3 seconds ago</div>
-		
-						</td>
-		
-								
-						<td width="20%" align="center">
-		
-						<a href="index.php?v=rdVtmzJPpTU"><img src="/web/20050831230308im_/http://www.youtube.com/get_still.php?video_id=rdVtmzJPpTU" width="80" height="60" style="border: 5px solid #FFFFFF; margin-top: 10px;"></a>
-						<div class="moduleFeaturedDetails" style="padding-top: 2px;">5 seconds ago</div>
-		
-						</td>
-		
-								
-						<td width="20%" align="center">
-		
-						<a href="index.php?v=eNaTrqC3F5o"><img src="/web/20050831230308im_/http://www.youtube.com/get_still.php?video_id=eNaTrqC3F5o" width="80" height="60" style="border: 5px solid #FFFFFF; margin-top: 10px;"></a>
-						<div class="moduleFeaturedDetails" style="padding-top: 2px;">6 seconds ago</div>
-		
-						</td>
-		
-										</tr>
-				</table>
-				
-				</div>
-				</td>
-				<td><img src="img/pixel.gif" width="5" height="1"></td>
-			</tr>
-			<tr>
-				<td><img src="img/box_login_bl.gif" width="5" height="5"></td>
-				<td><img src="img/pixel.gif" width="1" height="5"></td>
-				<td><img src="img/box_login_br.gif" width="5" height="5"></td>
-			</tr>
-		</table>
-		</div>
-		<!-- end recently viewed -->
+<?php include("recently_viewed.php"); ?>
 
 		<!-- begin recently featured -->
 		<table width="595" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#CCCCCC">
@@ -855,66 +578,66 @@
 				<div style="font-size: 14px; font-weight: bold; margin-bottom: 8px; color: #666633;">Last 8 users online...</div>
 
 				
-					<div style="font-size: 12px; font-weight: bold; margin-bottom: 5px;"><a href="profile.php?user=spartanjoe">spartanjoe</a></div>
+					<div style="font-size: 12px; font-weight: bold; margin-bottom: 5px;"><a href="profile.php?user=spartanjoe">jawed</a></div>
 
-					<div style="font-size: 12px; margin-bottom: 8px; padding-bottom: 10px; border-bottom: 1px dashed #CCCC66;"><a href="profile_videos.php?user=spartanjoe"><img src="/web/20050831230308im_/http://www.youtube.com/img/icon_vid.gif" alt="Videos" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_videos.php?user=spartanjoe">6</a>)
-					 | <a href="profile_favorites.php?user=spartanjoe"><img src="/web/20050831230308im_/http://www.youtube.com/img/icon_fav.gif" alt="Favorites" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_favorites.php?user=spartanjoe">0</a>)
-					 | <a href="profile_friends.php?user=spartanjoe"><img src="/web/20050831230308im_/http://www.youtube.com/img/icon_friends.gif" alt="Friends" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_friends.php?user=spartanjoe">0</a>)</div>
-
-					
-					<div style="font-size: 12px; font-weight: bold; margin-bottom: 5px;"><a href="profile.php?user=hilleman">hilleman</a></div>
-
-					<div style="font-size: 12px; margin-bottom: 8px; padding-bottom: 10px; border-bottom: 1px dashed #CCCC66;"><a href="profile_videos.php?user=hilleman"><img src="/web/20050831230308im_/http://www.youtube.com/img/icon_vid.gif" alt="Videos" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_videos.php?user=hilleman">0</a>)
-					 | <a href="profile_favorites.php?user=hilleman"><img src="/web/20050831230308im_/http://www.youtube.com/img/icon_fav.gif" alt="Favorites" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_favorites.php?user=hilleman">2</a>)
-					 | <a href="profile_friends.php?user=hilleman"><img src="/web/20050831230308im_/http://www.youtube.com/img/icon_friends.gif" alt="Friends" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_friends.php?user=hilleman">1</a>)</div>
+					<div style="font-size: 12px; margin-bottom: 8px; padding-bottom: 10px; border-bottom: 1px dashed #CCCC66;"><a href="profile_videos.php?user=spartanjoe"><img src="img/icon_vid.gif" alt="Videos" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_videos.php?user=spartanjoe">6</a>)
+					 | <a href="profile_favorites.php?user=spartanjoe"><img src="img/icon_fav.gif" alt="Favorites" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_favorites.php?user=spartanjoe">0</a>)
+					 | <a href="profile_friends.php?user=spartanjoe"><img src="img/icon_friends.gif" alt="Friends" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_friends.php?user=spartanjoe">0</a>)</div>
 
 					
-					<div style="font-size: 12px; font-weight: bold; margin-bottom: 5px;"><a href="profile.php?user=Boingo">Boingo</a></div>
+					<div style="font-size: 12px; font-weight: bold; margin-bottom: 5px;"><a href="profile.php?user=hilleman">jawed</a></div>
 
-					<div style="font-size: 12px; margin-bottom: 8px; padding-bottom: 10px; border-bottom: 1px dashed #CCCC66;"><a href="profile_videos.php?user=Boingo"><img src="/web/20050831230308im_/http://www.youtube.com/img/icon_vid.gif" alt="Videos" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_videos.php?user=Boingo">24</a>)
-					 | <a href="profile_favorites.php?user=Boingo"><img src="/web/20050831230308im_/http://www.youtube.com/img/icon_fav.gif" alt="Favorites" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_favorites.php?user=Boingo">0</a>)
-					 | <a href="profile_friends.php?user=Boingo"><img src="/web/20050831230308im_/http://www.youtube.com/img/icon_friends.gif" alt="Friends" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_friends.php?user=Boingo">0</a>)</div>
-
-					
-					<div style="font-size: 12px; font-weight: bold; margin-bottom: 5px;"><a href="profile.php?user=cessax">cessax</a></div>
-
-					<div style="font-size: 12px; margin-bottom: 8px; padding-bottom: 10px; border-bottom: 1px dashed #CCCC66;"><a href="profile_videos.php?user=cessax"><img src="/web/20050831230308im_/http://www.youtube.com/img/icon_vid.gif" alt="Videos" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_videos.php?user=cessax">6</a>)
-					 | <a href="profile_favorites.php?user=cessax"><img src="/web/20050831230308im_/http://www.youtube.com/img/icon_fav.gif" alt="Favorites" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_favorites.php?user=cessax">0</a>)
-					 | <a href="profile_friends.php?user=cessax"><img src="/web/20050831230308im_/http://www.youtube.com/img/icon_friends.gif" alt="Friends" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_friends.php?user=cessax">0</a>)</div>
+					<div style="font-size: 12px; margin-bottom: 8px; padding-bottom: 10px; border-bottom: 1px dashed #CCCC66;"><a href="profile_videos.php?user=hilleman"><img src="img/icon_vid.gif" alt="Videos" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_videos.php?user=hilleman">0</a>)
+					 | <a href="profile_favorites.php?user=hilleman"><img src="img/icon_fav.gif" alt="Favorites" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_favorites.php?user=hilleman">2</a>)
+					 | <a href="profile_friends.php?user=hilleman"><img src="img/icon_friends.gif" alt="Friends" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_friends.php?user=hilleman">1</a>)</div>
 
 					
-					<div style="font-size: 12px; font-weight: bold; margin-bottom: 5px;"><a href="profile.php?user=dayblue350z">dayblue350z</a></div>
+					<div style="font-size: 12px; font-weight: bold; margin-bottom: 5px;"><a href="profile.php?user=Boingo">jawed</a></div>
 
-					<div style="font-size: 12px; margin-bottom: 8px; padding-bottom: 10px; border-bottom: 1px dashed #CCCC66;"><a href="profile_videos.php?user=dayblue350z"><img src="/web/20050831230308im_/http://www.youtube.com/img/icon_vid.gif" alt="Videos" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_videos.php?user=dayblue350z">1</a>)
-					 | <a href="profile_favorites.php?user=dayblue350z"><img src="/web/20050831230308im_/http://www.youtube.com/img/icon_fav.gif" alt="Favorites" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_favorites.php?user=dayblue350z">0</a>)
-					 | <a href="profile_friends.php?user=dayblue350z"><img src="/web/20050831230308im_/http://www.youtube.com/img/icon_friends.gif" alt="Friends" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_friends.php?user=dayblue350z">0</a>)</div>
-
-					
-					<div style="font-size: 12px; font-weight: bold; margin-bottom: 5px;"><a href="profile.php?user=ozzi">ozzi</a></div>
-
-					<div style="font-size: 12px; margin-bottom: 8px; padding-bottom: 10px; border-bottom: 1px dashed #CCCC66;"><a href="profile_videos.php?user=ozzi"><img src="/web/20050831230308im_/http://www.youtube.com/img/icon_vid.gif" alt="Videos" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_videos.php?user=ozzi">0</a>)
-					 | <a href="profile_favorites.php?user=ozzi"><img src="/web/20050831230308im_/http://www.youtube.com/img/icon_fav.gif" alt="Favorites" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_favorites.php?user=ozzi">1</a>)
-					 | <a href="profile_friends.php?user=ozzi"><img src="/web/20050831230308im_/http://www.youtube.com/img/icon_friends.gif" alt="Friends" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_friends.php?user=ozzi">0</a>)</div>
+					<div style="font-size: 12px; margin-bottom: 8px; padding-bottom: 10px; border-bottom: 1px dashed #CCCC66;"><a href="profile_videos.php?user=Boingo"><img src="img/icon_vid.gif" alt="Videos" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_videos.php?user=Boingo">24</a>)
+					 | <a href="profile_favorites.php?user=Boingo"><img src="img/icon_fav.gif" alt="Favorites" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_favorites.php?user=Boingo">0</a>)
+					 | <a href="profile_friends.php?user=Boingo"><img src="img/icon_friends.gif" alt="Friends" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_friends.php?user=Boingo">0</a>)</div>
 
 					
-					<div style="font-size: 12px; font-weight: bold; margin-bottom: 5px;"><a href="profile.php?user=threesixtyflipo">threesixtyflipo</a></div>
+					<div style="font-size: 12px; font-weight: bold; margin-bottom: 5px;"><a href="profile.php?user=cessax">jawed</a></div>
 
-					<div style="font-size: 12px; margin-bottom: 8px; padding-bottom: 10px; border-bottom: 1px dashed #CCCC66;"><a href="profile_videos.php?user=threesixtyflipo"><img src="/web/20050831230308im_/http://www.youtube.com/img/icon_vid.gif" alt="Videos" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_videos.php?user=threesixtyflipo">0</a>)
-					 | <a href="profile_favorites.php?user=threesixtyflipo"><img src="/web/20050831230308im_/http://www.youtube.com/img/icon_fav.gif" alt="Favorites" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_favorites.php?user=threesixtyflipo">3</a>)
-					 | <a href="profile_friends.php?user=threesixtyflipo"><img src="/web/20050831230308im_/http://www.youtube.com/img/icon_friends.gif" alt="Friends" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_friends.php?user=threesixtyflipo">0</a>)</div>
+					<div style="font-size: 12px; margin-bottom: 8px; padding-bottom: 10px; border-bottom: 1px dashed #CCCC66;"><a href="profile_videos.php?user=cessax"><img src="img/icon_vid.gif" alt="Videos" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_videos.php?user=cessax">6</a>)
+					 | <a href="profile_favorites.php?user=cessax"><img src="img/icon_fav.gif" alt="Favorites" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_favorites.php?user=cessax">0</a>)
+					 | <a href="profile_friends.php?user=cessax"><img src="img/icon_friends.gif" alt="Friends" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_friends.php?user=cessax">0</a>)</div>
 
 					
-					<div style="font-size: 12px; font-weight: bold; margin-bottom: 5px;"><a href="profile.php?user=paintsplash">paintsplash</a></div>
+					<div style="font-size: 12px; font-weight: bold; margin-bottom: 5px;"><a href="profile.php?user=dayblue350z">jawed</a></div>
 
-					<div style="font-size: 12px; margin-bottom: 8px; padding-bottom: 10px; border-bottom: 1px dashed #CCCC66;"><a href="profile_videos.php?user=paintsplash"><img src="/web/20050831230308im_/http://www.youtube.com/img/icon_vid.gif" alt="Videos" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_videos.php?user=paintsplash">0</a>)
-					 | <a href="profile_favorites.php?user=paintsplash"><img src="/web/20050831230308im_/http://www.youtube.com/img/icon_fav.gif" alt="Favorites" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_favorites.php?user=paintsplash">0</a>)
-					 | <a href="profile_friends.php?user=paintsplash"><img src="/web/20050831230308im_/http://www.youtube.com/img/icon_friends.gif" alt="Friends" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_friends.php?user=paintsplash">0</a>)</div>
+					<div style="font-size: 12px; margin-bottom: 8px; padding-bottom: 10px; border-bottom: 1px dashed #CCCC66;"><a href="profile_videos.php?user=dayblue350z"><img src="img/icon_vid.gif" alt="Videos" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_videos.php?user=dayblue350z">1</a>)
+					 | <a href="profile_favorites.php?user=dayblue350z"><img src="img/icon_fav.gif" alt="Favorites" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_favorites.php?user=dayblue350z">0</a>)
+					 | <a href="profile_friends.php?user=dayblue350z"><img src="img/icon_friends.gif" alt="Friends" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_friends.php?user=dayblue350z">0</a>)</div>
+
+					
+					<div style="font-size: 12px; font-weight: bold; margin-bottom: 5px;"><a href="profile.php?user=ozzi">jawed</a></div>
+
+					<div style="font-size: 12px; margin-bottom: 8px; padding-bottom: 10px; border-bottom: 1px dashed #CCCC66;"><a href="profile_videos.php?user=ozzi"><img src="img/icon_vid.gif" alt="Videos" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_videos.php?user=ozzi">0</a>)
+					 | <a href="profile_favorites.php?user=ozzi"><img src="img/icon_fav.gif" alt="Favorites" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_favorites.php?user=ozzi">1</a>)
+					 | <a href="profile_friends.php?user=ozzi"><img src="img/icon_friends.gif" alt="Friends" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_friends.php?user=ozzi">0</a>)</div>
+
+					
+					<div style="font-size: 12px; font-weight: bold; margin-bottom: 5px;"><a href="profile.php?user=threesixtyflipo">jawed</a></div>
+
+					<div style="font-size: 12px; margin-bottom: 8px; padding-bottom: 10px; border-bottom: 1px dashed #CCCC66;"><a href="profile_videos.php?user=threesixtyflipo"><img src="img/icon_vid.gif" alt="Videos" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_videos.php?user=threesixtyflipo">0</a>)
+					 | <a href="profile_favorites.php?user=threesixtyflipo"><img src="img/icon_fav.gif" alt="Favorites" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_favorites.php?user=threesixtyflipo">3</a>)
+					 | <a href="profile_friends.php?user=threesixtyflipo"><img src="img/icon_friends.gif" alt="Friends" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_friends.php?user=threesixtyflipo">0</a>)</div>
+
+					
+					<div style="font-size: 12px; font-weight: bold; margin-bottom: 5px;"><a href="profile.php?user=paintsplash">jawed</a></div>
+
+					<div style="font-size: 12px; margin-bottom: 8px; padding-bottom: 10px; border-bottom: 1px dashed #CCCC66;"><a href="profile_videos.php?user=paintsplash"><img src="img/icon_vid.gif" alt="Videos" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_videos.php?user=paintsplash">0</a>)
+					 | <a href="profile_favorites.php?user=paintsplash"><img src="img/icon_fav.gif" alt="Favorites" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_favorites.php?user=paintsplash">0</a>)
+					 | <a href="profile_friends.php?user=paintsplash"><img src="img/icon_friends.gif" alt="Friends" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_friends.php?user=paintsplash">0</a>)</div>
 
 									
 				<div style="font-weight: bold; margin-bottom: 5px;">Icon Key:</div>
-				<div style="margin-bottom: 4px;"><img src="/web/20050831230308im_/http://www.youtube.com/img/icon_vid.gif" alt="Videos" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"> - Videos</div>
-				<div style="margin-bottom: 4px;"><img src="/web/20050831230308im_/http://www.youtube.com/img/icon_fav.gif" alt="Favorites" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"> - Favorites</div>
-				<img src="/web/20050831230308im_/http://www.youtube.com/img/icon_friends.gif" alt="Friends" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"> - Friends
+				<div style="margin-bottom: 4px;"><img src="img/icon_vid.gif" alt="Videos" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"> - Videos</div>
+				<div style="margin-bottom: 4px;"><img src="img/icon_fav.gif" alt="Favorites" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"> - Favorites</div>
+				<img src="img/icon_friends.gif" alt="Friends" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"> - Friends
 				
 				</div>
 
@@ -938,12 +661,7 @@
 	</tr>
 </table>
 
-<table cellpadding="10" cellspacing="0" border="0" align="center">
-	<tr>
-		<td align="center" valign="center"><span class="footer"><a href="whats_new.php">What's New</a> | <a href="about.php">About Us</a> | <a href="help.php">Help</a> | <a href="developers_intro.php">Developers</a> <img src="/web/20050831230308im_/http://www.youtube.com/img/new.gif"> | <a href="terms.php">Terms of Use</a> | <a href="privacy.php">Privacy Policy</a> 
-		<br><br>Copyright &copy; 2022 hyperion, LLC&#8482; | <a href="rss/global/recently_added.rss"><img src="img/rss.gif" width="36" height="14" border="0" style="vertical-align: text-top;"></a></span></td>
-	</tr>
-</table>
+<?php include("footer.php"); ?>
 
 <div id="sheet" style="position:fixed; top:0px; visibility:hidden; width:100%; text-align:center;">
 <table width="100%">

@@ -28,7 +28,7 @@
 </table>
 </div>
 <?php
-$statement = $link->prepare("SELECT `username`, `id`, `description`, `created_at`, `hometown` FROM `users` WHERE `username` = ? LIMIT 1");
+$statement = $link->prepare("SELECT `username`, `id`, `description`, `created_at`, `hometown`, `relationship_status`, `gender` FROM `users` WHERE `username` = ? LIMIT 1");
 $statement->bind_param("s", $_GET['user']);
 $statement->execute();
 $result = $statement->get_result();
@@ -53,11 +53,11 @@ echo '
 					
 						
 				<div class="profileLabel">Gender:</div>
-				Male			
+				'.$row['gender'].'			
 					
 						
 				<div class="profileLabel">Relationship Status:</div>
-				Not implemented in backend			
+				'.$row['relationship_status'].'			
 					
 					
 						

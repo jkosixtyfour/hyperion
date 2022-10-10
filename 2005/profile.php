@@ -1,6 +1,16 @@
 
 <html>
 <?php include("htmlhead.php"); ?>
+<?php include("time.php"); ?>
+<?php
+$statement = $link->prepare("SELECT `username`, `id` FROM `users` WHERE `username` = ? LIMIT 1");
+$statement->bind_param("s", $_GET['user']);
+$statement->execute();
+$result = $statement->get_result();
+while($row = $result->fetch_assoc()) {
+	$username_staffnotice = $row['username'];
+}
+?>
 
 
 <body onload="performOnLoadFunctions();">
@@ -9,6 +19,20 @@
 		<td bgcolor="#FFFFFF" style="padding-bottom: 25px;">
 		
 <?php include("headeralt.php"); ?>
+<?php
+      $statement = $link->prepare("SELECT `username`, `is_staff` FROM `users` WHERE `username` = ? LIMIT 1");
+      $statement->bind_param("s", $_GET['user']);
+      $statement->execute();
+      $result = $statement->get_result();
+      while($row = $result->fetch_assoc()) {
+        if ($row["is_staff"] === 1) {
+        echo('<div class="errorBox">
+		'.$row["username"].' is hyperion staff. our staff will never ask for your account information unless stated otherwise.
+	</div>');
+        }
+      }
+      ?>
+
 
 <div style="padding-bottom: 15px;">
 <table align="center" cellpadding="0" cellspacing="0" border="0">
@@ -28,11 +52,13 @@
 </table>
 </div>
 <?php
-$statement = $link->prepare("SELECT `username`, `id`, `description`, `created_at`, `hometown`, `relationship_status`, `gender` FROM `users` WHERE `username` = ? LIMIT 1");
+$statement = $link->prepare("SELECT `username`, `id`, `description`, `created_at`, `hometown`, `relationship_status`, `gender`, `last_login` FROM `users` WHERE `username` = ? LIMIT 1");
 $statement->bind_param("s", $_GET['user']);
 $statement->execute();
 $result = $statement->get_result();
 while($row = $result->fetch_assoc()) {
+	$ago_join = time_elapsed_string(''.$row['created_at'].'');
+	$last_login_ago = time_elapsed_string(''.$row['last_login'].'');
 echo '
 <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
 	<tr valign="top">
@@ -46,9 +72,9 @@ echo '
 			<!-- Personal Information: -->
 			
 			<div class="profileLabel">Last Login:</div>
-			Not implemented	
+			<span title="'.$row['last_login'].'">'.$last_login_ago.'</span>
 			<div class="profileLabel">Signed up:</div>
-			'.$row['created_at'].'
+			<span title="'.$row['created_at'].'">'.$ago_join.'</span>
 					
 					
 						

@@ -58,11 +58,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
                             // Password is correct, so start a new session
                             session_start();
+
                             
                             // Store data in session variables
                             $_SESSION["loggedin"] = true;
                             $_SESSION["id"] = $id;
-                            $_SESSION["username"] = $username;                            
+                            $_SESSION["username"] = $username;     
+							
+							// Set last login date
+							mysqli_query($link, "UPDATE users SET last_login = now() WHERE username = '".$_SESSION["username"]."'");
                             
                             // Redirect user to welcome page
                             header("location: index.php");
@@ -153,6 +157,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 				<tr>
 					<td align="right"><span class="label">&nbsp;</span></td>
 					<td><input type="submit" value="Log In"></td>
+					<span style="color: red;"><?php echo $password_err; ?></span>
+					<span style="color: red;"><?php echo $username_err; ?></span>
+					<?php 
+        if(!empty($login_err)){
+            echo '<span style="color: red;"><?php echo '.$login_err.'; ?></span>';
+        }        
+        ?>
 				</tr>
 				<tr>
 					<td align="center" colspan="2"><a href="forgot.php">Forgot your password?</a><br><br></td>

@@ -1,6 +1,6 @@
 <table width="100%" cellpadding="0" cellspacing="0" border="0">
 	<tr valign="top">
-		<td width="130" rowspan="2" style="padding: 0px 5px 5px 5px;"><a href="index.php"><img src="img/logo.png" width="120" height="48" alt="YouTube" border="0" style="vertical-align: middle; "></a></td>
+		<td width="130" rowspan="2" style="padding: 0px 5px 5px 5px;"><a href="index.php"><img src="img/logo_new.png" width="120" height="48" alt="YouTube" border="0" style="vertical-align: middle; "></a></td>
 		<td valign="top">
 		
 		<table width="670" cellpadding="0" cellspacing="0" border="0">
@@ -24,7 +24,7 @@ if(!isset($_SESSION['username'])) {
             $statement->bind_param("s", $_SESSION['username']);
             $statement->execute();
             $result = $statement->get_result();
-            if($result->num_rows === 0) exit('No rows');
+            if($result->num_rows === 0) echo('Uh oh, something is wrong with your session:<br> The logged in user couldn&#39t be found.');
             while($row = $result->fetch_assoc()) {
                 echo '<td>Hello, <a href="./profile.php?user='.$_SESSION["username"].'">'.$_SESSION["username"].'</a>! <img src="img/mail.gif" border="0"> (<a href="#">0</a>)</td>
                 <td style="padding: 0px 5px 0px 5px;">|</td>

@@ -15,9 +15,21 @@
 
 <?php include("header.php"); ?>
 
-<div class="errorBox">
-		This site is in development. Please report any bugs to our <a href="https://discord.gg/ggcw72kYwV">Discord server</a>.
-	</div>
+	<?php
+      if(empty($_GET["msg"])) {
+        echo "<div class='errorBox'>
+		This site is in development. Please report any bugs to our <a href='https://discord.gg/ggcw72kYwV'>Discord server</a>.
+	</div>";
+      } else if($_GET["msg"] === " ") {
+        echo "<div class='errorBox'>
+		This site is in development. Please report any bugs to our <a href='https://discord.gg/ggcw72kYwV'>Discord server</a>.
+	</div>";
+      } else { echo '
+		<div class="errorBox">
+		'.$_GET["msg"].'
+	    </div>';
+    }
+          ?>
 
 <table width="790" align="center" cellpadding="0" cellspacing="0" border="0">
 	<tr valign="top">

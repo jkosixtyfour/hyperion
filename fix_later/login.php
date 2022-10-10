@@ -161,6 +161,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 		<tr>
 			<td class="formLabel">&nbsp;</td>
 			<td class="formFieldSmall"><input type="submit" name="action_login" value="Log In">
+            
 				<p class="smallText"><b>Forgot:</b>&nbsp;<a href="/web/20061213175221/http://www.youtube.com/forgot_username">Username</a> | <a href="/web/20061213175221/http://www.youtube.com/forgot">Password</a></p>
 			</td>
 		</tr>
